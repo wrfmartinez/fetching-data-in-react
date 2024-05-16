@@ -28,9 +28,9 @@ const App = () => {
         {city ?
         <div>
           <h2>Weather Details</h2>
-          <p>Location: {weather.location}</p>
-          <p>Temperature: {weather.temperature}</p>
-          <p>Condition: {weather.condition}</p> 
+          <p>Location: {weather.location ? weather.location : '...'}</p>
+          <p>Temperature: {weather.temperature ? weather.temperature : '...'}</p>
+          <p>Condition: {weather.condition ? weather.condition : '...'}</p> 
         </div>
         : 
         <p>No data to show</p>}
